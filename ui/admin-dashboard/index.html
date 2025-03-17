@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Management System - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <div class="sidebar-header mb-4">
+                        <h3 class="text-white">Fuel Management</h3>
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" id="nav-dashboard">
+                                <i class="bi bi-speedometer2 me-2"></i>Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="nav-transactions">
+                                <i class="bi bi-card-list me-2"></i>Transactions
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="nav-vehicles">
+                                <i class="bi bi-truck me-2"></i>Vehicles
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="nav-bowsers">
+                                <i class="bi bi-fuel-pump me-2"></i>Bowsers
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="nav-drivers">
+                                <i class="bi bi-person me-2"></i>Drivers
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="d-grid gap-2 px-3">
+                        <button class="btn btn-primary" id="refresh-data-btn">
+                            <i class="bi bi-arrow-clockwise me-2"></i>Refresh Data
+                        </button>
+                        <button class="btn btn-outline-secondary" id="simulate-transaction-btn">
+                            <i class="bi bi-play-fill me-2"></i>Simulate Transaction
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <!-- Header -->
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2" id="page-title">Dashboard</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="input-group me-2">
+                            <span class="input-group-text">Date Range</span>
+                            <input type="date" class="form-control" id="date-start">
+                            <input type="date" class="form-control" id="date-end">
+                            <button class="btn btn-outline-secondary" id="apply-date-range">Apply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Containers -->
+                <div id="content-dashboard" class="content-section">
+                    <!-- Dashboard Summary Cards -->
+                    <div class="row mb-4">
+                        <div class="col-md-3">
+                            <div class="card text-white bg-primary mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Total Fuel Dispensed</h5>
+                                    <p class="card-text h2" id="total-fuel-dispensed">0</p>
+                                    <p class="card-text">liters</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-white bg-success mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Total Transactions</h5>
+                                    <p class="card-text h2" id="total-transactions">0</p>
+                                    <p class="card-text">completed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-white bg-warning mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Discrepancies</h5>
+                                    <p class="card-text h2" id="discrepancy-transactions">0</p>
+                                    <p class="card-text">transactions</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-white bg-danger mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Low Fuel Alerts</h5>
+                                    <p class="card-text h2" id="low-fuel-alerts">0</p>
+                                    <p class="card-text">vehicles/bowsers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Transactions -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">Recent Transactions</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Date/Time</th>
+                                            <th>Driver</th>
+                                            <th>Vehicle</th>
+                                            <th>Bowser</th>
+                                            <th>Dispensed</th>
+                                            <th>Received</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="recent-transactions-table">
+                                        <!-- Recent transactions will be loaded here -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-transactions" class="content-section d-none">
+                    <!-- Transactions Filters -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">Filters</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label for="filter-vehicle" class="form-label">Vehicle</label>
+                                        <select class="form-select" id="filter-vehicle">
+                                            <option value="">All Vehicles</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label for="filter-driver" class="form-label">Driver</label>
+                                        <select class="form-select" id="filter-driver">
+                                            <option value="">All Drivers</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label for="filter-bowser" class="form-label">Bowser</label>
+                                        <select class="form-select" id="filter-bowser">
+                                            <option value="">All Bowsers</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label for="filter-status" class="form-label">Status</label>
+                                        <select class="form-select" id="filter-status">
+                                            <option value="">All Statuses</option>
+                                            <option value="completed">Completed</option>
+                                            <option value="pending">Pending</option>
+                                            <option value="discrepancy">Discrepancy</option>
+                                            <option value="timed_out">Timed Out</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-primary" id="apply-filters">Apply Filters</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Transactions Table -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Transactions</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Date/Time</th>
+                                            <th>Driver</th>
+                                            <th>Vehicle</th>
+                                            <th>Bowser</th>
+                                            <th>Dispensed</th>
+                                            <th>Received</th>
+                                            <th>Discrepancy</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="transactions-table">
+                                        <!-- Transactions will be loaded here -->
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <span id="pagination-info">Showing 1-10 of 0</span>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-secondary" id="prev-page" disabled>Previous</button>
+                                    <button class="btn btn-sm btn-outline-secondary" id="next-page" disabled>Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-vehicles" class="content-section d-none">
+                    <!-- Vehicles section content -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Vehicles</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Registration</th>
+                                            <th>Fuel Level</th>
+                                            <th>Odometer</th>
+                                            <th>Standard Burn Rate</th>
+                                            <th>Last Updated</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="vehicles-table">
+                                        <!-- Vehicles will be loaded here -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-bowsers" class="content-section d-none">
+                    <!-- Bowsers section content -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Bowsers</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Fuel Level</th>
+                                            <th>Capacity</th>
+                                            <th>Critical Level</th>
+                                            <th>Total Dispensed</th>
+                                            <th>Last Updated</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="bowsers-table">
+                                        <!-- Bowsers will be loaded here -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-drivers" class="content-section d-none">
+                    <!-- Drivers section content -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Drivers</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Role</th>
+                                            <th>iButton Code</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="drivers-table">
+                                        <!-- Drivers will be loaded here -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Transaction Modal -->
+    <div class="modal fade" id="transactionModal" tabindex="-1" aria-labelledby="transactionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="transactionModalLabel">Transaction Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="transaction-details">
+                    <!-- Transaction details will be loaded here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
+    

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Management - Driver App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header text-center my-4">
+            <h1>Fuel Authorization</h1>
+            <p class="lead">Enter odometer reading to begin fueling</p>
+        </div>
+
+        <div class="card mb-4" id="authentication-card">
+            <div class="card-body">
+                <h5 class="card-title">Authentication Required</h5>
+                <p class="card-text">Please tap your iButton to authenticate.</p>
+                
+                <!-- This would be replaced by actual hardware authentication -->
+                <div class="form-group mb-3">
+                    <label for="driver-id">Driver ID (For Simulation):</label>
+                    <select class="form-control" id="driver-id">
+                        <option value="">Select Driver</option>
+                        <!-- Drivers will be loaded here -->
+                    </select>
+                </div>
+                
+                <div class="form-group mb-3">
+                    <label for="vehicle-id">Vehicle ID (For Simulation):</label>
+                    <select class="form-control" id="vehicle-id">
+                        <option value="">Select Vehicle</option>
+                        <!-- Vehicles will be loaded here -->
+                    </select>
+                </div>
+                
+                <div class="form-group mb-3">
+                    <label for="bowser-id">Bowser ID (For Simulation):</label>
+                    <select class="form-control" id="bowser-id">
+                        <option value="">Select Bowser</option>
+                        <!-- Bowsers will be loaded here -->
+                    </select>
+                </div>
+                
+                <button class="btn btn-primary" id="authenticate-btn">Authenticate</button>
+            </div>
+        </div>
+
+        <div class="card mb-4 d-none" id="odometer-card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="card-title mb-0">Enter Odometer Reading</h5>
+                    <span class="badge bg-success" id="driver-badge">Driver: Not Authenticated</span>
+                </div>
+                
+                <div class="vehicle-info mb-3">
+                    <p class="mb-1"><strong>Vehicle:</strong> <span id="vehicle-name">Not Selected</span></p>
+                    <p class="mb-0"><strong>Registration:</strong> <span id="vehicle-registration">Not Selected</span></p>
+                </div>
+                
+                <form id="odometer-form">
+                    <div class="form-group mb-3">
+                        <label for="odometer-reading">Current Odometer Reading (km):</label>
+                        <input type="number" class="form-control" id="odometer-reading" required min="0" step="0.1" placeholder="Enter current reading">
+                        <small class="form-text text-muted">Please enter the exact reading from the vehicle's odometer.</small>
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                        <label for="odometer-photo">Take Photo of Odometer (Optional):</label>
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-secondary" id="capture-photo-btn">
+                                <i class="bi bi-camera"></i> Capture Photo
+                            </button>
+                        </div>
+                        <div id="photo-preview" class="mt-2 d-none">
+                            <img src="" id="preview-image" class="img-fluid border rounded">
+                            <input type="hidden" id="photo-data">
+                            <button type="button" class="btn btn-sm btn-danger mt-1" id="remove-photo-btn">Remove</button>
+                        </div>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg">Authorize Fueling</button>
+                        <button type="button" class="btn btn-outline-secondary" id="cancel-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mb-4 d-none" id="confirmation-card">
+            <div class="card-body text-center">
+                <h5 class="card-title mb-4">Fueling Authorized</h5>
+                <div class="success-icon mb-4">
+                    <i class="bi bi-check-circle-fill"></i>
+                </div>
+                <p class="card-text">You may now begin fueling.</p>
+                <p class="card-text">Transaction ID: <span id="transaction-id">N/A</span></p>
+                <p class="timer">This screen will close in <span id="countdown">30</span> seconds.</p>
+                <button class="btn btn-primary mt-3" id="done-btn">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/driver-app.js"></script>
+</body>
+</html>

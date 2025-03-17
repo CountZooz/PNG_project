@@ -1,0 +1,131 @@
+2025-03-16 20:36:37,407 - wialon_simulator - ERROR - Error initializing database: relation "wialon_data.units" does not exist
+LINE 2:                     INSERT INTO wialon_data.units 
+                                        ^
+
+2025-03-16 20:36:37,417 - wialon_simulator - ERROR - Error storing simulated transaction: relation "wialon_data.geozone_events" does not exist
+LINE 2:                 INSERT INTO wialon_data.geozone_events
+                                    ^
+
+2025-03-16 20:36:37,417 - wialon_simulator - INFO - Simulated transaction f86e7cc9-1f0c-472c-8eff-c6cf99b8f812: EFM 104 POM - HINO 300 FLAT TOP (BGX 104) received 133.88 liters
+2025-03-16 20:36:37,428 - wialon_simulator - ERROR - Error storing simulated transaction: relation "wialon_data.geozone_events" does not exist
+LINE 2:                 INSERT INTO wialon_data.geozone_events
+                                    ^
+
+2025-03-16 20:36:37,428 - wialon_simulator - INFO - Simulated transaction 92b6c922-c986-4eaa-a03d-7ee70eace8bb: EFM 108 POM - ISUZU FVR flat top (BGX 108) received 113.45 liters
+2025-03-16 20:36:37,437 - wialon_simulator - ERROR - Error storing simulated transaction: relation "wialon_data.geozone_events" does not exist
+LINE 2:                 INSERT INTO wialon_data.geozone_events
+                                    ^
+
+2025-03-16 20:36:37,437 - wialon_simulator - INFO - Simulated transaction c66d0dbd-69e6-4753-b810-0739375808fb: EFM 104 POM - HINO 300 FLAT TOP (BGX 104) received 95.98 liters
+2025-03-16 20:36:37,447 - wialon_simulator - ERROR - Error storing simulated transaction: relation "wialon_data.geozone_events" does not exist
+LINE 2:                 INSERT INTO wialon_data.geozone_events
+                                    ^
+
+2025-03-16 20:36:37,447 - wialon_simulator - INFO - Simulated transaction c91ac01f-c14f-4965-9998-40851f185f45: EFM 105 POM - CAMC 6x4 RIGID (BGX 105) received 202.9 liters
+2025-03-16 20:36:37,457 - wialon_simulator - ERROR - Error storing simulated transaction: relation "wialon_data.geozone_events" does not exist
+LINE 2:                 INSERT INTO wialon_data.geozone_events
+                                    ^
+
+2025-03-16 20:36:37,458 - wialon_simulator - INFO - Simulated transaction bc6dba63-0850-4893-a54a-f00cc91ad8d8: EFM 104 POM - HINO 300 FLAT TOP (BGX 104) received 88.92 liters
+2025-03-16 20:36:37,467 - wialon_simulator - ERROR - Error storing simulated transaction: relation "wialon_data.geozone_events" does not exist
+LINE 2:                 INSERT INTO wialon_data.geozone_events
+                                    ^
+
+2025-03-16 20:36:37,467 - wialon_simulator - INFO - Simulated transaction cf62ff66-311b-4db0-ae56-cbfc3d39458d: EFM 101 POM - CAMC 6x4 RIGID (BGX 101) received 89.61 liters
+2025-03-16 20:36:37,477 - wialon_simulator - ERROR - Error storing simulated transaction: relation "wialon_data.geozone_events" does not exist
+LINE 2:                 INSERT INTO wialon_data.geozone_events
+                                    ^
+
+2025-03-16 20:36:37,477 - wialon_simulator - INFO - Simulated transaction ca57f1f8-5a6c-4e8a-94b2-5dc650afc1e3: EFM 109 POM - CAMC 6x4 RIGID (BGX 109) received 59.01 liters
+2025-03-16 20:36:37,487 - wialon_simulator - ERROR - Error storing simulated transaction: relation "wialon_data.geozone_events" does not exist
+LINE 2:                 INSERT INTO wialon_data.geozone_events
+                                    ^
+
+2025-03-16 20:36:37,487 - wialon_simulator - INFO - Simulated transaction 81200dc1-596c-46ac-9cfa-0257279aa705: EFM 102 POM - Nissan Urvan (BGX 102) received 145.02 liters
+2025-03-16 20:36:37,497 - wialon_simulator - ERROR - Error storing simulated transaction: relation "wialon_data.geozone_events" does not exist
+LINE 2:                 INSERT INTO wialon_data.geozone_events
+                                    ^
+
+2025-03-16 20:36:37,497 - wialon_simulator - INFO - Simulated transaction 7fc4bf8f-2feb-441b-a204-306139a7d993: EFM 105 POM - CAMC 6x4 RIGID (BGX 105) received 61.73 liters
+2025-03-16 20:36:37,506 - wialon_simulator - ERROR - Error storing simulated transaction: relation "wialon_data.geozone_events" does not exist
+LINE 2:                 INSERT INTO wialon_data.geozone_events
+                                    ^
+
+2025-03-16 20:36:37,507 - wialon_simulator - INFO - Simulated transaction 72e31a3d-3441-4f9f-8c3d-3dfe63d1e833: EFM 104 POM - HINO 300 FLAT TOP (BGX 104) received 90.98 liters
+2025-03-16 20:47:27,603 - wialon_simulator - INFO - Database initialized with sample data
+2025-03-16 20:47:27,622 - wialon_simulator - INFO - Simulated transaction 1e684582-cf6e-44d5-8d8a-8ed4fe50afcb: EFM 106 POM - ISUZU FVR flat top (BGX 106) received 191.8 liters
+2025-03-16 20:47:27,639 - wialon_simulator - INFO - Simulated transaction eddc7381-b17c-4118-ad25-4baab9d7b081: EFM 103 POM - CAMC PRIME MOVER 6x4 (BGX 103) received 121.87 liters
+2025-03-16 20:47:27,703 - wialon_simulator - INFO - Simulated transaction ffc69b26-206e-4c95-a4d8-bed9fb53024f: EFM 108 POM - CAMC 6x4 RIGID (BGX 108) received 113.56 liters
+2025-03-16 20:47:27,737 - wialon_simulator - INFO - Simulated transaction 934f15f9-e786-4315-b060-e0d390f9de8c: EFM 107 POM - Nissan Urvan (BGX 107) received 69.64 liters
+2025-03-16 20:47:27,769 - wialon_simulator - INFO - Simulated transaction 6d8b8a93-83b1-4542-ad85-0c3c9dd89d79: EFM 103 POM - CAMC PRIME MOVER 6x4 (BGX 103) received 175.08 liters
+2025-03-16 20:47:27,800 - wialon_simulator - INFO - Simulated transaction 42bc2610-d5ba-4b0c-8515-e99bfd045584: EFM 107 POM - Nissan Urvan (BGX 107) received 162.84 liters
+2025-03-16 20:47:27,831 - wialon_simulator - INFO - Simulated transaction 5fb6e335-df35-4416-a358-c29ae6cc0778: EFM 103 POM - CAMC PRIME MOVER 6x4 (BGX 103) received 131.08 liters
+2025-03-16 20:47:27,859 - wialon_simulator - INFO - Simulated transaction 33ae2b21-31e3-4880-98b8-c1359fc9c147: EFM 107 POM - Nissan Urvan (BGX 107) received 170.19 liters
+2025-03-16 20:47:27,877 - wialon_simulator - INFO - Simulated transaction 2a1f5737-5773-4632-b010-b87d7fcebfef: EFM 105 POM - HINO 300 FLAT TOP (BGX 105) received 182.04 liters
+2025-03-16 20:47:27,893 - wialon_simulator - INFO - Simulated transaction c18f007d-c92e-44b3-8e3c-d43597a003b1: EFM 108 POM - CAMC 6x4 RIGID (BGX 108) received 190.14 liters
+2025-03-16 21:04:35,403 - wialon_simulator - INFO - Database initialized with sample data
+2025-03-16 21:04:35,430 - wialon_simulator - INFO - Simulated transaction 3bcee91e-89c1-45eb-81c4-17fd2484577c: EFM 104 POM - TOYOTA HILUX (BGX 104) received 188.03 liters
+2025-03-16 21:04:35,449 - wialon_simulator - INFO - Simulated transaction 50c255d0-bab1-478f-ad31-e36a01b0b2bb: EFM 107 POM - CAMC 6x4 RIGID (BGX 107) received 135.96 liters
+2025-03-16 21:04:35,496 - wialon_simulator - INFO - Simulated transaction 35f98da0-2180-4cfb-b87e-2eea329f489d: EFM 104 POM - TOYOTA HILUX (BGX 104) received 161.26 liters
+2025-03-16 21:04:35,518 - wialon_simulator - INFO - Simulated transaction 2365e58c-2d77-43f4-b0c4-bf86324e6123: EFM 101 POM - ISUZU FVR flat top (BGX 101) received 95.12 liters
+2025-03-16 21:04:35,540 - wialon_simulator - INFO - Simulated transaction 6445ada7-7f56-4203-a9d4-1c5afb1bc32c: EFM 106 POM - ISUZU FVR flat top (BGX 106) received 134.8 liters
+2025-03-16 21:04:35,560 - wialon_simulator - INFO - Simulated transaction ea59ff89-b8fe-4056-9e95-13b58fd669ac: EFM 108 POM - ISUZU FVR flat top (BGX 108) received 173.45 liters
+2025-03-16 21:04:35,579 - wialon_simulator - INFO - Simulated transaction 0139fb6c-cc80-420f-a621-e19dcc48619d: EFM 106 POM - ISUZU FVR flat top (BGX 106) received 168.87 liters
+2025-03-16 21:04:35,596 - wialon_simulator - INFO - Simulated transaction 58795e71-5bd9-44cd-8ed1-e31564837692: EFM 102 POM - ISUZU FVR flat top (BGX 102) received 96.96 liters
+2025-03-16 21:04:35,614 - wialon_simulator - INFO - Simulated transaction 31b3f124-8a6e-46a1-9d81-510fbfcb0cff: EFM 102 POM - ISUZU FVR flat top (BGX 102) received 172.4 liters
+2025-03-16 21:04:35,660 - wialon_simulator - INFO - Simulated transaction fb6c2bad-5d9f-4ec2-b1a5-e2b63ede4a8b: EFM 102 POM - ISUZU FVR flat top (BGX 102) received 74.53 liters
+2025-03-16 21:06:20,734 - wialon_simulator - INFO - Database initialized with sample data
+2025-03-16 21:06:20,752 - wialon_simulator - INFO - Simulated transaction 70f4d63f-bcd5-4bfb-9cbc-fd952a3c804a: EFM 102 POM - TOYOTA HILUX (BGX 102) received 146.78 liters
+2025-03-16 21:06:20,797 - wialon_simulator - INFO - Simulated transaction 030d8b8b-3da8-4e40-9e6c-07f4e5850aea: EFM 107 POM - Nissan Urvan (BGX 107) received 169.32 liters
+2025-03-16 21:06:20,817 - wialon_simulator - INFO - Simulated transaction 943473a5-f2c1-4e73-a603-7877a93672a1: EFM 103 POM - ISUZU FVR flat top (BGX 103) received 111.15 liters
+2025-03-16 21:06:20,838 - wialon_simulator - INFO - Simulated transaction 1ea80b44-727a-4615-bb56-c0f6f93d0774: EFM 101 POM - CAMC PRIME MOVER 6x4 (BGX 101) received 106.59 liters
+2025-03-16 21:06:20,855 - wialon_simulator - INFO - Simulated transaction a41a26b8-348d-4238-aa27-0d8ab40bf960: EFM 106 POM - Nissan Urvan (BGX 106) received 150.22 liters
+2025-03-16 21:06:20,874 - wialon_simulator - INFO - Simulated transaction def7ac0b-8a68-4701-b4d7-0cab58d285ae: EFM 108 POM - CAMC 6x4 RIGID (BGX 108) received 75.29 liters
+2025-03-16 21:06:20,891 - wialon_simulator - INFO - Simulated transaction 887b3ed6-de6c-4b34-a520-fd1e54bb5d46: EFM 101 POM - CAMC PRIME MOVER 6x4 (BGX 101) received 107.86 liters
+2025-03-16 21:06:20,911 - wialon_simulator - INFO - Simulated transaction da3e51fb-9c3e-458b-8bee-68309933fcf1: EFM 104 POM - TOYOTA HILUX (BGX 104) received 62.43 liters
+2025-03-16 21:06:20,930 - wialon_simulator - INFO - Simulated transaction 58681e1d-fe26-4aba-96a9-048fb2285dd1: EFM 102 POM - TOYOTA HILUX (BGX 102) received 57.65 liters
+2025-03-16 21:06:20,950 - wialon_simulator - INFO - Simulated transaction 70188714-5055-49fd-8ce9-664c9e1427a2: EFM 106 POM - Nissan Urvan (BGX 106) received 144.54 liters
+2025-03-16 21:07:02,477 - wialon_simulator - INFO - Database initialized with sample data
+2025-03-16 21:07:02,495 - wialon_simulator - INFO - Simulated transaction f6f60f2f-e65f-40fc-aa3e-131bb0778db5: EFM 103 POM - HINO 300 FLAT TOP (BGX 103) received 58.16 liters
+2025-03-16 21:07:02,513 - wialon_simulator - INFO - Simulated transaction a48ade45-03bc-4baa-bafa-750d7031773f: EFM 107 POM - CAMC 6x4 RIGID (BGX 107) received 148.77 liters
+2025-03-16 21:07:02,531 - wialon_simulator - INFO - Simulated transaction 63841387-8dac-4ab3-9888-6c90272ce004: EFM 109 POM - CAMC 6x4 RIGID (BGX 109) received 193.52 liters
+2025-03-16 21:07:02,550 - wialon_simulator - INFO - Simulated transaction bea943fb-41b4-4397-b6f6-b81ec2cbb01d: EFM 109 POM - CAMC 6x4 RIGID (BGX 109) received 84.25 liters
+2025-03-16 21:07:02,569 - wialon_simulator - INFO - Simulated transaction 9a5d0617-b07f-43ed-8cb6-7a702f5acfc5: EFM 100 POM - ISUZU FVR flat top (BGX 100) received 85.21 liters
+2025-03-16 21:07:02,587 - wialon_simulator - INFO - Simulated transaction 25d53c49-4cac-4b0d-80c3-992b435d0cca: EFM 101 POM - Nissan Urvan (BGX 101) received 141.89 liters
+2025-03-16 21:07:02,604 - wialon_simulator - INFO - Simulated transaction 561c8912-dbbc-40a9-8886-591753250295: EFM 106 POM - CAMC PRIME MOVER 6x4 (BGX 106) received 86.73 liters
+2025-03-16 21:07:02,622 - wialon_simulator - INFO - Simulated transaction 86f49d29-7119-4f91-b465-80d581d90a89: EFM 100 POM - ISUZU FVR flat top (BGX 100) received 152.72 liters
+2025-03-16 21:07:02,641 - wialon_simulator - INFO - Simulated transaction f85cb6c9-f7d5-4ff9-bb8f-eaf75f9f5cfc: EFM 109 POM - CAMC 6x4 RIGID (BGX 109) received 192.7 liters
+2025-03-16 21:07:02,659 - wialon_simulator - INFO - Simulated transaction f1a5c878-79c6-482a-95e1-28e9b68f645e: EFM 102 POM - CAMC PRIME MOVER 6x4 (BGX 102) received 200.74 liters
+2025-03-16 21:11:23,903 - wialon_simulator - INFO - Database initialized with sample data
+2025-03-16 21:11:23,921 - wialon_simulator - INFO - Simulated transaction 69f50080-df22-4f3e-ada1-20798030ea4d: EFM 103 POM - CAMC PRIME MOVER 6x4 (BGX 103) received 159.02 liters
+2025-03-16 21:11:23,940 - wialon_simulator - INFO - Simulated transaction ef2435f3-4b58-4901-b31a-8ac2f91c8ae4: EFM 102 POM - CAMC 6x4 RIGID (BGX 102) received 176.82 liters
+2025-03-16 21:11:23,958 - wialon_simulator - INFO - Simulated transaction 0a745a51-4aa4-4f74-ab27-6db790e3e184: EFM 102 POM - CAMC 6x4 RIGID (BGX 102) received 56.61 liters
+2025-03-16 21:11:23,976 - wialon_simulator - INFO - Simulated transaction 5dee4581-ed54-4a03-b97d-2703bc269884: EFM 107 POM - ISUZU FVR flat top (BGX 107) received 182.85 liters
+2025-03-16 21:11:23,995 - wialon_simulator - INFO - Simulated transaction e7240676-3472-48ff-9bb0-e17f6164fd53: EFM 104 POM - TOYOTA HILUX (BGX 104) received 55.96 liters
+2025-03-16 21:11:24,013 - wialon_simulator - INFO - Simulated transaction 83d12115-2725-45db-9d33-20d2535edee5: EFM 100 POM - Nissan Urvan (BGX 100) received 161.28 liters
+2025-03-16 21:11:24,032 - wialon_simulator - INFO - Simulated transaction 80e03864-2148-43e8-9dc0-9c0c7b746fc9: EFM 104 POM - TOYOTA HILUX (BGX 104) received 204.95 liters
+2025-03-16 21:11:24,050 - wialon_simulator - INFO - Simulated transaction 59c0f40e-4557-455c-890c-6c36451e61c9: EFM 101 POM - CAMC 6x4 RIGID (BGX 101) received 65.5 liters
+2025-03-16 21:11:24,068 - wialon_simulator - INFO - Simulated transaction 1d65233b-521b-4084-bee5-c7f5c05fead6: EFM 101 POM - CAMC 6x4 RIGID (BGX 101) received 96.58 liters
+2025-03-16 21:11:24,086 - wialon_simulator - INFO - Simulated transaction a874ce82-cbb9-42ba-941f-9438d2189f73: EFM 102 POM - CAMC 6x4 RIGID (BGX 102) received 90.44 liters
+2025-03-16 21:11:37,618 - wialon_simulator - INFO - Database initialized with sample data
+2025-03-16 21:11:37,639 - wialon_simulator - INFO - Simulated transaction 17661254-1a6a-4b31-a635-8cfd104c0b49: EFM 101 POM - CAMC 6x4 RIGID (BGX 101) received 70.18 liters
+2025-03-16 21:11:37,659 - wialon_simulator - INFO - Simulated transaction b9c3574a-6a51-4e7b-ad84-19d906ead65a: EFM 108 POM - ISUZU FVR flat top (BGX 108) received 140.03 liters
+2025-03-16 21:11:37,680 - wialon_simulator - INFO - Simulated transaction 1aeeaa5d-2d3d-46ea-aea8-a691ae724eb4: EFM 103 POM - TOYOTA HILUX (BGX 103) received 175.01 liters
+2025-03-16 21:11:37,702 - wialon_simulator - INFO - Simulated transaction 7054cbe7-eef7-4a0c-85a4-146fcab1e718: EFM 105 POM - TOYOTA HILUX (BGX 105) received 169.08 liters
+2025-03-16 21:11:37,722 - wialon_simulator - INFO - Simulated transaction 2ba51817-cc99-487c-9d71-144295ca7632: EFM 103 POM - TOYOTA HILUX (BGX 103) received 61.84 liters
+2025-03-16 21:11:37,739 - wialon_simulator - INFO - Simulated transaction e55cd5a4-d280-4457-82e2-7a237ce50b13: EFM 109 POM - ISUZU FVR flat top (BGX 109) received 87.03 liters
+2025-03-16 21:11:37,757 - wialon_simulator - INFO - Simulated transaction 4a2ce23e-1456-45c0-9207-3422f82ef2c4: EFM 107 POM - ISUZU FVR flat top (BGX 107) received 75.87 liters
+2025-03-16 21:11:37,774 - wialon_simulator - INFO - Simulated transaction b83b0049-f70e-4962-9fcf-86a06fe4ba84: EFM 104 POM - TOYOTA HILUX (BGX 104) received 156.48 liters
+2025-03-16 21:11:37,793 - wialon_simulator - INFO - Simulated transaction 37794c1b-9e7d-4a85-ae4c-f1004b2a872f: EFM 104 POM - TOYOTA HILUX (BGX 104) received 135.0 liters
+2025-03-16 21:11:37,811 - wialon_simulator - INFO - Simulated transaction 605d27f0-487b-4849-bab3-5c49291525de: EFM 105 POM - TOYOTA HILUX (BGX 105) received 190.72 liters
+2025-03-16 21:11:41,049 - wialon_simulator - INFO - Database initialized with sample data
+2025-03-16 21:11:41,067 - wialon_simulator - INFO - Simulated transaction 3d8c97f9-2c32-4045-a0f2-702d54839210: EFM 103 POM - TOYOTA HILUX (BGX 103) received 188.72 liters
+2025-03-16 21:11:41,085 - wialon_simulator - INFO - Simulated transaction affafa47-f89d-47cd-92d9-5baaca32a1cb: EFM 101 POM - ISUZU FVR flat top (BGX 101) received 126.48 liters
+2025-03-16 21:11:41,104 - wialon_simulator - INFO - Simulated transaction b97a9060-1cd0-47aa-9fe0-c98eaed52e1a: EFM 106 POM - TOYOTA HILUX (BGX 106) received 190.69 liters
+2025-03-16 21:11:41,122 - wialon_simulator - INFO - Simulated transaction ed5090e1-b042-4315-b659-cefbb3f9b2d8: EFM 100 POM - Nissan Urvan (BGX 100) received 141.18 liters
+2025-03-16 21:11:41,140 - wialon_simulator - INFO - Simulated transaction a85cc87f-8e28-49f6-92e9-d5031d2868de: EFM 105 POM - ISUZU FVR flat top (BGX 105) received 121.87 liters
+2025-03-16 21:11:41,159 - wialon_simulator - INFO - Simulated transaction 9215922c-79cc-43fb-a60b-a489b1029ae7: EFM 105 POM - ISUZU FVR flat top (BGX 105) received 122.61 liters
+2025-03-16 21:11:41,177 - wialon_simulator - INFO - Simulated transaction c4340362-8300-47c6-a6ab-8892b7d4afbf: EFM 106 POM - TOYOTA HILUX (BGX 106) received 157.04 liters
+2025-03-16 21:11:41,195 - wialon_simulator - INFO - Simulated transaction a76dbba2-638e-43b3-8cc3-05d94c3acb3e: EFM 106 POM - TOYOTA HILUX (BGX 106) received 163.87 liters
+2025-03-16 21:11:41,215 - wialon_simulator - INFO - Simulated transaction 0c79bc20-0b1b-4743-89ba-404d847f8b7a: EFM 109 POM - Nissan Urvan (BGX 109) received 104.48 liters
+2025-03-16 21:11:41,232 - wialon_simulator - INFO - Simulated transaction bdadc18a-8aa7-4e24-a80e-c20c1e9e98bf: EFM 103 POM - TOYOTA HILUX (BGX 103) received 199.96 liters
